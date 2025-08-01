@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10vw;
+    aspect-ratio: 10 / 1.5;
+}
+
+#hour-input,
+#min-input,
+#sec-input,
+#h-input,
+#m-input,
+#s-input {
+    margin-top: 15px;
+}
+
+#output-time,
+#output-time2,
+#clock-output,
+#countdown-output {
+    margin: 10px auto;
+    font: 3em sans-serif;
+    color: purple;
+}
+
+button {
+    margin: 25px auto;
+    border-radius: 5px;
+    font: 1rem sans-serif;
+    width: 7em;
+    aspect-ratio: 7 / 3;
+    background: red;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 150ms ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(0, 255, 0);
+}
+
+#stopwatch-output {
+    font: 3em sans-serif;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+}
+
+#stopwatch-stop-btn {
+    margin-top: 1em;
+}
+
+.warning-active {
+    animation: warningPulse 1500ms ease-in-out infinite;
+}
+
+#animated-box {
+    margin: 45px auto;
+    width: 8vw;
+    aspect-ratio: 1 / 1;
+    background-color: #000;
+    border: none;
+    border-radius: 50%;
+}
+
+@keyframes warningPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        color: red;
+        font-weight: 900;
+    }
+
+    50% {
+        transform: scale(1.2);
+        color: red;
+        font-weight: 900;
+    }
+}
