@@ -85,3 +85,10 @@ button:hover {
         font-weight: 900;
     }
 }
+
+.line{
+    margin: 80px auto;
+    width: 65vw;
+    height: 3px;
+    background-color: #000;
+}
